@@ -6,7 +6,7 @@
 #SBATCH --time=1:00:00
 #SBATCH --mem=32GB
 #SBATCH --partition=gpu
-#SBATCH --gres=gpu:1
+#SBATCH --gres=gpu:1 --gres-flags=enforce-binding
 #SBATCH -o tf_sing_job_%j.o
 #SBATCH -e tf_sing_job_%j.e
 

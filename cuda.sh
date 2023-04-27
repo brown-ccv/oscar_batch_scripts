@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Request a GPU partition node and access to 1 GPU
-#SBATCH -p gpu --gres=gpu:1
+#SBATCH -p gpu --gres=gpu:1 --gres-flags=enforce-binding
 
 # Ensures all allocated cores are on the same node
 #SBATCH -N 1
