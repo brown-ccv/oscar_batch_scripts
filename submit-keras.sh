@@ -4,7 +4,7 @@
 #SBATCH --time=00:30:00
 
 # Ask for the GPU partition and 1 GPU
-#SBATCH -p gpu --gres=gpu:1
+#SBATCH -p gpu --gres=gpu:1 --gres-flags=enforce-binding
 
 # Default resources are 1 core with 2.8GB of memory.
 
